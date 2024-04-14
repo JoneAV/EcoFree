@@ -1,42 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Jones homesite page</title>
-    <link rel="stylesheet" href="Joneboi.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jel2qmr.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/arw2ztu.css">
+    <link rel="icon" href="Visuell_profil/grafikk/Logo/EcoFree_logo.svg">
 </head>
+
 <body>
-    
-    <video muted loop autoplay id="bg">
-        <source src="Bilder og videoer/Index-moving-background.mp4">
-    </video>
 
-    <div class="container">
-        <header>
-            <a class="dalink" href="index.html">Home🏠</a>
-            <a class="link" href="about-me.html">About me🛈 </a>
-            <a class="link" href="web-design.html">Web-design🎨</a>
-            <a class="link" href="portfolio.html">Portfolio📰</a>
-            <a class="link" href="contact-me.html">Contact me📞</a>
-            <a class="link" href="ip.html">Static IP-address🌐</a>
-        </header>
+    <!--Navbar on the top-->
+    <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="bizniz.html">Bussiness-ideas</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="mywork.html">My work</a>
+        <a href="designmanual.html">Design manual</a>
+    </nav>
 
-        <div class="hovedbar">
-            <h1>Jones Website</h1>
+    <!--Logo and under the navbar-->
+    <img src="Visuell_profil/grafikk/Logo/EcoFree_logo.svg" alt="logo" class="logo">
 
+        <!--Gif animation under the logo-->
+    <div class="gif-container">
+        <img src="Gif/EcoFree.gif" alt="EcoFree Animated GIF">
+        <p>Videos taken by Elias Ramstad</p>
+      </div>
+
+        <!--Div with commercial-->
+    <div class="reklamefilm">
+        <h1>EcoFree: The blog you are looking for</h1>
+        <div class="reklamefilm2">   
+            <!-- <video controls>
+                <source src="Reklamefilm/Ferdigresultater/EcoFreeCommercial_LongVersion.mp4" type="video/mp4" alt="Commercial">
+                Add additional <source> tags for different video formats if needed 
+                Your browser does not support the video tag.
+              </video> -->
+              <button onclick="changeFilm('Reklamefilm/Ferdigresultater/EcoFreeCommercial_LongVersion.mp4')">Long version</button>
+           <button onclick="changeFilm('Reklamefilm/Ferdigresultater/EcoFreeCommercial_ShortVersion.mp4')">Short version</button>
+            <video id="filmFrame" controls src="Reklamefilm/Ferdigresultater/EcoFreeCommercial_LongVersion.mp4"></video>
+           <p>What you are told is not always the truth. Some of the most successful people today are dropouts. Don't give up because you can't go to School. All you need is to believe in yourself.</p>
         </div>
-
-        <video width="320" height="240" controls>
-            <source src="Bilder og videoer/about me video.mp4" type="video/mp4">
-        </video>
-        
     </div>
 
-</body>
+        <!--Div with short commercial-->
+        <!-- <div class="reklamefilm">
+            <h1>Short version of commercial</h1>
+             <div class="reklamefilm2">   
+                <video controls>
+                    <source src="Reklamefilm/Ferdigresultater/EcoFreeCommercial_ShortVersion.mp4" type="video/mp4" alt="Commercial">
+                    Add additional <source> tags for different video formats if needed
+                    Your browser does not support the video tag. 
+                    </video> 
+                <p>In addition to formal education, nurture self-belief, trust your talents, and embrace continuous learning through various means like relationships and hands-on experiences. </p>
+            </div> 
+        </div> -->
 
-</html>
+        <!--Second bar with same colortheme as first bar-->
+    <div class="tekstogbilde">
+        <p>Turn your dream into reality</p>
+        <img src="Foto/PapersInAir.jpg" alt="Papers In The Air">
+        <p>This is the little push you needed</p>
+    </div>
+
+        <!--Orange div with picture on the bottom-->
+    <div class="grønnblådiv">
+         <div class="O1">
+            <p>Whether you want to walk your own lifepath</p>
+            <img src="Foto/Bro.jpg" alt="wide open grasslawn">
+        </div>
+        <div class="O2">
+            <p>Or perhaps you are more into educating yourself in your interests</p>
+            <img src="Foto/Reading.jpg" alt="Reading a book in a chair">
+        </div>
+        <div class="O3">
+            <p>You are capable of being free by learning and doing what you put your mind into</p>
+            <img src="Foto/TopOfWorld.jpg" alt="Standing on top of a grasshill">
+        </div>
+    </div>
+
+    <!--Footer with contactinfo-->
+    <footer>
+        <div class="container">
+          <p>&copy; 2023 EcoFree | Jone Ali Villa | All rights reserved.</p>
+          <p>School: Kuben VGS</p>
+          <p>Phone: +47 950 93 263</p>
+          <p>Email: jone@ali.tf</p>
+        </div>
+      </footer>
+      
+      <Script src="script.js"></Script>
+</body>

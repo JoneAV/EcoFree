@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Jones homesite page</title>
-    <link rel="stylesheet" href="Joneboi.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jel2qmr.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/arw2ztu.css">
+    <link rel="icon" href="Visuell_profil/grafikk/Logo/EcoFree_logo.svg">
 </head>
-<body>
-    
-    <div class="container">
-        <header>
-            <a class="link" href="index.html">Home🏠</a>
-            <a class="link" href="about-me.html">About me🛈 </a>
-            <a class="link" href="web-design.html">Web-design🎨</a>
-            <a class="dalink" href="portfolio.html">Portfolio📰</a>
-            <a class="link" href="contact-me.html">Contact me📞</a>
-            <a class="link" href="ip.html">Static IP-address🌐</a>
-        </header>
+    <!--Make background color different from other pages-->
+<body style="background-color: #70f5ff;">
 
-        <div class="hovedbar">
 
+    <!--Navbar on the top-->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="bizniz.html">Bussiness-ideas</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="mywork.html">My work</a>
+        <a href="designmanual.html">Design manual</a>
+    </nav>
+
+    <!--Logo under the navbar-->
+     <img src="Visuell_profil/grafikk/Logo/EcoFree_logo.svg" alt="logo" class="logo">
+
+         <!--Box with qick info, two buttons, to other pages and a picture of me-->
+    <div class="portfolio">
+        <h1>Hello!</h1>
+        <div class="bottomdiv">
+            <div class="bluebox">
+                <h1>I am Jone Ali Villa</h1>
+                <h2>Founder of EcoFree</h2>
+                <p>Educated in</p>
+                <p>Information Technology</p>
+                <p>and</p>
+                <p>Media Production</p>
+            </div>
+            <div class="portbuttons">
+                <a href="mywork.html">My work</a>
+                <p>or</p>
+                <a href="designmanual.html">Design manual</a>
+            </div>
+            <div class="picturediv">
+                <img src="Foto/Portfoliopic.png" alt="Jone Ali Villa">
+                <p>Picture taken by Elias Ramstad</p>
+            </div>
         </div>
-
     </div>
 
-    <div class="hovedbar">
-        <h1>My work</h1>
-
-        <div class="photoshop">
-            <img src="Portfolio/Jeremy Fragrance shows of his new cow slaughtering business (with credit).jpg" alt="photoshop">
+    
+    <!--Footer with contactinfo-->
+    <footer>
+        <div class="container">
+          <p>&copy; 2023 EcoFree | Jone Ali Villa | All rights reserved.</p>
+          <p>School: Kuben VGS</p>
+          <p>Phone: +47 950 93 263</p>
+          <p>Email: jone@ali.tf</p>
         </div>
-
-        
-        <div class="portie">
-            <video controls>
-                <source src="Portfolio/gruppe 3 studio.mp4" type="video/mp4">
-            </video>
-            <video controls>
-                <source src="Portfolio/Gruppe 6.mp4" type="video/mp4">
-            </video>
-        </div>
-        
-        <div class="portie-2">
-            <video controls>
-                <source src="Portfolio/Cinamagraph kantina-karuselldør speed up.mp4" type="video/mp4">
-            </video>
-        </div>
-
+      </footer>
+      
 </body>
-
-</html>
