@@ -1,0 +1,627 @@
+body {
+  background-color: #bdfbff;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: left;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  align-items: center;
+  padding: 1vh;
+  padding-left: 25vh;
+  background-color: #2A7C82;
+}
+
+.navbar a:hover {
+  background-color: #5ac5cc; /* Change the background color when hovering */
+}
+
+.navbar a.active:hover {
+  color: #ffffff;
+  background-color: #5ac5cc; /* Change the background color when hovering */
+}
+
+
+.navbar a {
+  color: #ffffff;
+  padding: 1vh;
+  margin-right: 2vh;
+  text-decoration: none;
+  font-family: elza-text, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5vh;
+}
+
+/*To make the active nav-button greenishblue*/
+.navbar a.active {
+  font-weight: bold;
+  color: #5ac5cc;
+}
+
+footer {
+  background-color: #2a7c82;
+  padding: 1vh;
+  text-align: center;
+  font-size: 2vh;
+  color: #ffffff;
+  bottom: 0;
+}
+
+footer p {
+  margin: 1vh;
+}
+
+.container {
+  max-width: 120vh;
+  margin: auto;
+  padding: 1%;
+}
+
+.logo {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.gif-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+
+}
+
+.gif-container img {
+  width: 100%;
+}
+
+.gif-container p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 2.5vh;
+  margin: 0.5%;
+}
+
+.reklamefilm {
+  display: flex;
+  flex-direction: column;
+  background-color: #70f5ff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  margin-top: 7%;
+  border: 0.1vh solid black;
+}
+
+.reklamefilm h1 {
+  font-family: "elza-text", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  font-size: 4vh;
+}
+
+.reklamefilm2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* .reklamefilm2 video {
+  width: 200vh;
+  height: auto;
+} */
+
+.reklamefilm2 p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 4vh;
+  margin: 2%;
+}
+
+#filmFrame {
+  width: 70vh;
+  margin: 4vh;
+}
+
+.reklamefilm2 button {
+  background-color: #bdfbff;
+  font-size: 4vh;
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.tekstogbilde {
+  display: flex;
+  flex-direction: row;
+  background-color: #70f5ff;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  padding: 1%;
+  border: 0.1vh solid black;
+}
+
+.tekstogbilde img {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  /* Centers the image horizontally */
+}
+
+.tekstogbilde p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin: auto;
+  font-size: 3.5vh;
+  padding: 5%;
+}
+
+.grønnblådiv {
+  display: flex;
+  flex-direction: row;
+  background-color: #5ac5cc;
+  padding: 2vh;
+}
+
+.O1 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.O1 p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.O1 img {
+  display: flex;
+  width: 70vh;
+  margin: auto;
+  /* Centers the image horizontally */
+}
+
+.O2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.O2 p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.O2 img {
+  display: flex;
+  width: 35vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.O3 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.O3 p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.O3 img {
+  display: flex;
+  width: 65vh;
+  margin: auto;
+  /* Centers the image horizontally */
+}
+
+.grønnblådiv p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.tekstdiv {
+  display: flex;
+  flex-direction: row;
+  background-color: #70f5ff;
+  padding: 2vh;
+  margin: auto;
+  width: 97%;
+  border: 0.1vh solid black;
+}
+
+.tekstdiv p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3.7vh;
+  text-align: center;
+}
+
+.business-ideas {
+  display: flex;
+  flex-direction: column;
+  background-color: #5ac5cc;
+  padding: 2vh;
+  margin: 10vh;
+  align-items: center;
+}
+
+.business-ideas img {
+  display: flex;
+  width: 75vh;
+  margin: auto;
+  /* Centers the image horizontally */
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+.business-ideas h1{
+  font-family: "elza-text", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  font-size: 4vh;
+}
+
+.business-ideas p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 4vh;
+  text-align: center;
+  margin: 2%;
+  margin-top: -1%;
+  background-color: #70f5ff;
+  padding: 1vh;
+}
+
+.bunntekst {
+  display: flex;
+  flex-direction: row;
+  background-color: #70f5ff;
+  padding: 1vh;
+  margin: auto;
+  width: 98%;
+  border: 0.1vh solid black;
+  margin-bottom: 10vh;
+}
+
+.bunntekst p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 4vh;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  background-color: #5ac5cc;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  margin-bottom: -3%;
+}
+
+.about h1 {
+  font-family: "elza-text", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  margin-top: 1%;
+  font-size: 10vh;
+  margin: 1%;
+}
+
+.about-tekst {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 80%;
+  margin: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  border: 0.1vh solid black;
+}
+
+.about-tekst p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 4vh;
+  text-align: center;
+}
+
+.about-tekst img {
+  display: flex;
+  margin: auto;
+  /* Centers the image horizontally */
+  height: 50vh;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.1vh solid black;
+}
+
+.portfolio h1 {
+  font-family: "elza-text", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 7vh;
+  margin: 5%;
+}
+
+.bottomdiv {
+  display: flex;
+  justify-content: flex-end;
+  /* Aligns the content to the right side */
+}
+
+
+
+.bluebox {
+  display: flex;
+  flex-direction: column;
+  background-color: #bdfbff;
+  width: 30%;
+  height: 60vh;
+  margin-top: 25vh;
+  margin-bottom: 10vh;
+  margin-left: 3vh;
+  margin-right: 10vh;
+  border: 0.1vh solid black;
+}
+
+.bluebox h1 {
+  font-family: "elza-text", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 5vh;
+  margin: 10%;
+}
+
+.bluebox h2 {
+  font-family: "elza-text", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: left;
+  font-size: 3vh;
+  margin: 10%;
+  margin-bottom: 10vh;
+}
+
+.bluebox p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3vh;
+  text-align: left;
+  margin: 1%;
+  margin-left: 5vh;
+}
+
+.portbuttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portbuttons a {
+  color: #000000;
+  background-color: #bdfbff;
+  border: 0.1vh solid black;
+  padding: 1vh;
+  margin-right: 2vh;
+  text-decoration: none;
+  font-family: "elza-text", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5vh;
+}
+
+.portbuttons p {
+  color: #000000;
+  padding: 1vh;
+  margin-right: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  text-decoration: none;
+  font-family: "elza-text", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5vh;
+}
+
+.portbuttons a:hover {
+  background-color: #5ac5cc; /* Change the background color when hovering */
+}
+
+.picturediv img {
+  display: flex;
+  height: 100vh;
+  /* Set the desired width */
+  object-fit: cover;
+  /* Ensures the image covers the entire container */
+}
+
+.picturediv p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 2vh;
+  text-align: center;
+  margin: 1%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  /* Centers the content horizontally */
+  align-items: center;
+  /* Centers the content vertically */
+  background-color: #bdfbff;
+  width: 30%;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border: 0.1vh solid black;
+}
+
+.header h1 {
+  font-family: "elza-text", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 6vh;
+}
+
+.workprojects {
+  display: flex;
+  flex-direction: column;
+  background-color: #5ac5cc;
+  margin: 5vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.projectL {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.projectL iframe {
+  width: 80%;
+  height: 45vh;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.projectL p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3vh;
+  text-align: left;
+  margin: 5%;
+  margin-left: 5vh;
+}
+
+.projectR {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.projectR iframe {
+  width: 80%;
+  height: 45vh;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.projectR p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3vh;
+  text-align: right;
+  margin: 5%;
+  margin-left: 5vh;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project iframe {
+  width: 50%;
+  height: 70vh;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.project p {
+  font-family: "quasimoda", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  max-width: 60%;
+  font-size: 3vh;
+  text-align: center;
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pdf-design {
+  display: flex;
+  justify-content: center;
+  /* Centers the content horizontally */
+  align-items: center;
+  /* Centers the content vertically */
+}
+
+.pdf-design iframe {
+  max-width: 70%;
+  max-height: 50%;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  border: none;
+}
+
